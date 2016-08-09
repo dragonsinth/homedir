@@ -16,8 +16,3 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
-[github]
-	site = https://github.com
-	endpoint = https://api.github.com
-[reflow]
-	git-server = GitHub

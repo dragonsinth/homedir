@@ -6,7 +6,7 @@ source '/Users/scottb/installs/google-cloud-sdk/completion.bash.inc'
 
 export EDITOR="mate -w"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH="$HOME/bin:$HOME/installs/go_appengine:$PATH"
+export PATH="$HOME/bin:$PATH"
 export PS1="\[$(tput setaf 7)\]\w \[$(tput sgr0)\]"
 export GOROOT=/usr/local/Cellar/go/1.8.3/libexec
 export GOPATH=~/src/mn/projects/fullstory/go

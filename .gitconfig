@@ -2,7 +2,7 @@
 	email = dragonsinth@gmail.com
 	name = Scott Blum
 [push]
-	default = simple
+	default = current
 [fetch]
 	prune = true
 [credential]

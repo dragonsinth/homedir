@@ -1,9 +1,3 @@
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/scottb/installs/google-cloud-sdk/path.bash.inc'
-
-# The next line enables bash completion for gcloud.
-source '/Users/scottb/installs/google-cloud-sdk/completion.bash.inc'
-
 export EDITOR="mate -w"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="$HOME/bin:$PATH"
@@ -11,6 +5,7 @@ export PS1="\[$(tput setaf 7)\]\w \[$(tput sgr0)\]"
 export GOPATH=~/src/mn/projects/fullstory/go
 export FS_HOME=~/src/mn/projects/fullstory
 export FS_LOCAL=true
+export FSDEV_HOME=~/src/fsdev-mac
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -al'
@@ -31,5 +26,7 @@ alias git-branches='git for-each-ref --sort=committerdate refs/heads/ --format="
 alias git-diff-head='git diff `git merge-base master $(git rev-parse --abbrev-ref HEAD)`..$(git rev-parse --abbrev-ref HEAD)'
 
 # kube
-alias kube-stage='gcloud --project fs-staging container clusters get-credentials cluster-1'
-alias kube-prod='gcloud --project fullstoryapp container clusters get-credentials cluster-1'
+alias kube-stage='gcloud --project fs-staging container clusters get-credentials --zone us-central1-b cluster-1'
+alias kube-prod='gcloud --project fullstoryapp container clusters get-credentials --zone us-central1-b cluster-1'
+
+eval "$(direnv hook bash)"

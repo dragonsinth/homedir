@@ -2,10 +2,6 @@ export EDITOR="mate -w"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="$HOME/bin:$PATH"
 export PS1="\[$(tput setaf 7)\]\w \[$(tput sgr0)\]"
-export GOPATH=~/src/mn/projects/fullstory/go
-export FS_HOME=~/src/mn/projects/fullstory
-export FS_LOCAL=true
-export FSDEV_HOME=~/src/fsdev-mac
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -al'
@@ -30,3 +26,4 @@ alias kube-stage='gcloud --project fs-staging container clusters get-credentials
 alias kube-prod='gcloud --project fullstoryapp container clusters get-credentials --zone us-central1-b cluster-1'
 
 eval "$(direnv hook bash)"
+source /Users/scottb/.fsprofile

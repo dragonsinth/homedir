@@ -1,0 +1,4 @@
+#!/bin/bash
+svc=${1}
+shift
+kubectl logs service/${svc} -c ${svc} $@

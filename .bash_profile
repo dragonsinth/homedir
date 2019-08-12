@@ -22,6 +22,7 @@ alias git-branches='git for-each-ref --sort=committerdate refs/heads/ --format="
 alias git-diff-head='git diff `git merge-base master $(git rev-parse --abbrev-ref HEAD)`..$(git rev-parse --abbrev-ref HEAD)'
 
 # kube
+alias kube-play='gcloud --project fs-playpen container clusters get-credentials --zone us-central1-b cluster-1'
 alias kube-stage='gcloud --project fs-staging container clusters get-credentials --zone us-central1-b cluster-1'
 alias kube-prod='gcloud --project fullstoryapp container clusters get-credentials --zone us-central1-b cluster-1'
 

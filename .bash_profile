@@ -25,6 +25,11 @@ alias git-diff-head='git diff `git merge-base master $(git rev-parse --abbrev-re
 alias kube-play='gcloud --project fs-playpen container clusters get-credentials --zone us-central1-b cluster-1'
 alias kube-stage='gcloud --project fs-staging container clusters get-credentials --zone us-central1-b cluster-1'
 alias kube-prod='gcloud --project fullstoryapp container clusters get-credentials --zone us-central1-b cluster-1'
+alias kube-ops='gcloud --project fs-ops container clusters get-credentials --zone us-central1-c fs-ops-1'
+alias kube-corp='gcloud --project fs-corp container clusters get-credentials --zone us-central1-c cluster-1'
+alias kube-bwamp='gcloud --project fs-bwamp container clusters get-credentials --zone us-central1-b fs-bwamp'
+
+SKIP_FS_PS1=yes
 
 eval "$(direnv hook bash)"
 source /Users/scottb/.fsprofile

@@ -1,5 +1,4 @@
-export EDITOR="mate -w"
-export JAVA_HOME=$(/usr/libexec/java_home)
+export EDITOR="notepad.exe"
 export PATH="$HOME/bin:$PATH"
 export PS1="\[$(tput setaf 7)\]\w \[$(tput sgr0)\]"
 alias ls='ls -G'
@@ -29,7 +28,4 @@ alias kube-ops='gcloud --project fs-ops container clusters get-credentials --zon
 alias kube-corp='gcloud --project fs-corp container clusters get-credentials --zone us-central1-c cluster-1'
 alias kube-bwamp='gcloud --project fs-bwamp container clusters get-credentials --zone us-central1-b fs-bwamp'
 
-SKIP_FS_PS1=yes
-
-eval "$(direnv hook bash)"
-source /Users/scottb/.fsprofile
+# eval "$(direnv hook bash)"

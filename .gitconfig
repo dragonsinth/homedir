@@ -18,3 +18,5 @@
 	newHighlight = green bold 22
 [branch]
 	autosetupmerge = true
+[rerere]
+	enabled = true

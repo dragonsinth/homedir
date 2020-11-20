@@ -14,6 +14,9 @@ shopt -s histappend                      # append to history, don't overwrite it
 # Save and reload the history after each command finishes
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
+# gnu time (gtime)
+export TIME='\t%E real,\t%U user,\t%S sys,\t%K amem,\t%M mmem'
+
 # Default open files is way too low to run our tests.
 ulimit -n 10000
 

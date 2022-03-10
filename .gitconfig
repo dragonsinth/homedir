@@ -21,3 +21,5 @@
 	autosetupmerge = true
 [rerere]
 	enabled = true
+[commit]
+	template = /Users/scottb/src/mn/projects/fullstory/.gitmessage

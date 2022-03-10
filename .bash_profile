@@ -34,7 +34,6 @@ alias kube-bwamp='gcloud --project fs-bwamp container clusters get-credentials -
 
 SKIP_FS_PS1=yes
 
-eval "$(direnv hook bash)"
+source ~/.bashrc
 source /Users/scottb/.fsprofile
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+eval "$(direnv hook bash)"

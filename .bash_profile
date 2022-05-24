@@ -1,5 +1,5 @@
 export EDITOR="mate -w"
-export JAVA_HOME="/Users/scottb/src/fsdev/tools/jdk"
+export JAVA_HOME="/Users/scottb/src/fsdev/tools/jdk11"
 export PATH="$HOME/bin:$PATH"
 export PS1="\[$(tput setaf 7)\]\w \[$(tput sgr0)\]"
 alias ls='ls -G'

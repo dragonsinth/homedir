@@ -23,3 +23,5 @@
 	enabled = true
 [commit]
 	template = /Users/scottb/src/mn/projects/fullstory/.gitmessage
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

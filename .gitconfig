@@ -12,6 +12,8 @@
 [core]
 	pager = diff-so-fancy | less --tabs=1,5 -R
 	ignorecase = false
+	fsmonitor = true
+	untrackedcache = true
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52

@@ -26,11 +26,15 @@ alias git-diff-head='git diff `git merge-base master $(git rev-parse --abbrev-re
 
 # kube
 alias kube-play='gcloud --project fs-playpen container clusters get-credentials --zone us-central1-b cluster-1'
+alias kube-play-eu1='gcloud --project fs-playpen-eu1 container clusters get-credentials --zone europe-west3-a cluster-1'
 alias kube-stage='gcloud --project fs-staging container clusters get-credentials --zone us-central1-b cluster-1'
 alias kube-prod='gcloud --project fullstoryapp container clusters get-credentials --zone us-central1-b cluster-1'
 alias kube-ops='gcloud --project fs-ops container clusters get-credentials --zone us-central1-c fs-ops-1'
 alias kube-corp='gcloud --project fs-corp container clusters get-credentials --zone us-central1-c cluster-1'
 alias kube-bwamp='gcloud --project fs-bwamp container clusters get-credentials --zone us-central1-b fs-bwamp'
+alias kube-data='gcloud --project fs-datasci container clusters get-credentials --zone us-central1 cluster-1'
+alias kube-dsa='gcloud --project fs-dsa-prod container clusters get-credentials --zone us-central1 cluster-1'
+alias kube-build='gcloud --project fs-build container clusters get-credentials --zone us-central1-c cluster-1'
 
 SKIP_FS_PS1=yes
 

@@ -1,5 +1,10 @@
-export EDITOR="mate -w"
-export JAVA_HOME="$HOME/fsdev/tools/jdk11"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export EDITOR="mate -w"
+else
+  export EDITOR=nano
+fi
+
+export JAVA_HOME="$HOME/src/fsdev/tools/jdk17"
 export PATH="$HOME/bin:$PATH"
 export PS1="\[$(tput setaf 7)\]\w \[$(tput sgr0)\]"
 alias ls='ls -G'

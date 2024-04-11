@@ -48,4 +48,5 @@ SKIP_FS_PS1=yes
 
 source ~/.bashrc
 source ~/.fsprofile
+source ~/.fs_test_cert
 eval "$(direnv hook bash)"

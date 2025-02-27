@@ -50,3 +50,20 @@ source ~/.bashrc
 source ~/.fsprofile
 source ~/.fs_test_cert
 eval "$(direnv hook bash)"
+source /Users/scottb/.fsprofile
+
+
+source /Users/scottb/.fs_test_cert
+
+function reftest() {
+  bazel build //packages/reftest-driver;
+  bazel run //packages:reftest-bundles;
+  tools/node/copy-appengine.sh;
+
+  # save the first arg as the test filter then remove it from the args list
+  # to allow for any additional user provided flags to be set
+  local filter="$1"
+  shift
+
+  npm run test:reftest:local -- --testFilter="$filter" -b chrome "$@"
+}
